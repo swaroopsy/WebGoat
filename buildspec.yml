@@ -1,9 +1,23 @@
 version: 0.1
 
 phases:
-  build:
-    commands:
-      - mvn install
+ install:
+   commands:
+     - echo Entering install phase...
+     - echo Nothing to do in the install phase...
+ pre_build:
+   commands:
+     - echo Entering pre_build phase...
+     - echo Nothing to do in the pre_build phase...
+ build:
+   commands:
+     - echo Entering build phase...
+     - echo Build started on date
+     - mvn install
+ post_build:
+   commands:
+     - echo Entering post_build phase...
+     - echo Build completed on date
 
 artifacts:
   files:
