@@ -1,9 +1,9 @@
 version: 0.1
 
 phases:
- install:
-  runtime-versions:
-     java: corretto11
+  install:
+    runtime-versions:
+      java: openjdk11
    commands:
      - echo Entering install phase...
      - echo Nothing to do in the install phase...
